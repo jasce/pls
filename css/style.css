@@ -430,7 +430,7 @@ hr.bold {
 --- Intro
 ============================ */
 
-.hero { background: url(../img/hero-bg.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
+.hero { background: url(../img/hero-bg3.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 40px 0 10px; font-weight: 900; color: #fff;}
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { font-size: 24px; font-weight: 400; color: #fefefe; }
@@ -1030,13 +1030,13 @@ a.btn:focus{
         font-size: 25px;
     }
     .overlay {
-    padding: 25% 10% 10% 10%; 
+    padding: 21% 10% 10% 10%; 
     vertical-align: middle;
 }
 p#text {
     text-align: center;
     color: #fcf8e3;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: lighter;
     line-height: 2;
    
@@ -1110,7 +1110,7 @@ a.right.carousel-control {
 p#text {
     text-align: center;
     color: #fcf8e3;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: lighter;
     line-height: 2;
    
@@ -1147,7 +1147,7 @@ p#text {
 	p#text {
     text-align: center;
     color: #fcf8e3;
-    font-size: 27px;
+    font-size: 22px;
     font-weight: lighter;
     line-height: 2;
    
@@ -1157,13 +1157,13 @@ p#text {
 
 @media only screen and (max-width: 1200px) and (min-width: 992px ){
 	 .overlay {
-    padding:  22% 10% 10% 10%; 
+    padding:  20% 10% 10% 10%; 
     vertical-align: middle;
 	}
 	p#text {
     text-align: center;
     color: #fcf8e3;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: lighter;
     line-height: 2;
    
