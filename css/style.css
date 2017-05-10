@@ -1115,8 +1115,8 @@ p#text {
     line-height: 2;
    
 }
-.hero h1 { font-size: 30px; letter-spacing: 8px; margin: 30px 0 10px; font-weight: 900; color: #fff;}
-	
+.hero h1 { font-size: 32px; letter-spacing: 8px; margin: 30px 0 10px; font-weight: 900; color: #fff;}
+.hero p { font-size: 22px; font-weight: 400; color: #fefefe; }
 
 }
 
@@ -1129,6 +1129,8 @@ p#text {
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
+	.hero h1 { font-size: 24px; letter-spacing: 5px; margin: 30px 0 10px; font-weight: 900; color: #fff;}
+.hero p { font-size: 18px; font-weight: 400; color: #fefefe; }
 	
 }
 .quotation_div {
@@ -1153,6 +1155,8 @@ p#text {
     line-height: 2;
    
 }
+
+
 }
 
 
