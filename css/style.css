@@ -430,7 +430,7 @@ hr.bold {
 --- Intro
 ============================ */
 
-.hero { background: url(../img/hero-bg3.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
+.hero { background: url(../img/hero-bg5.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
 .hero h1 { font-size: 40px; letter-spacing: 12px; margin: 40px 0 10px; font-weight: 900; color: #fff;}
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { font-size: 24px; font-weight: 400; color: #fefefe; }
@@ -1030,7 +1030,7 @@ a.btn:focus{
         font-size: 25px;
     }
     .overlay {
-    padding: 21% 10% 10% 10%; 
+    padding: 23% 10% 10% 10%; 
     vertical-align: middle;
 }
 p#text {
@@ -1038,8 +1038,7 @@ p#text {
     color: #fcf8e3;
     font-size: 20px;
     font-weight: lighter;
-    line-height: 2;
-   
+     line-height: 1.8;
 }
 
 .carousel-control.left, .carousel-control.right{
@@ -1112,7 +1111,7 @@ p#text {
     color: #fcf8e3;
     font-size: 21px;
     font-weight: lighter;
-    line-height: 2;
+     line-height: 1.8;
    
 }
 .hero h1 { font-size: 32px; letter-spacing: 8px; margin: 30px 0 10px; font-weight: 900; color: #fff;}
@@ -1131,6 +1130,20 @@ p#text {
 	}
 	.hero h1 { font-size: 24px; letter-spacing: 5px; margin: 30px 0 10px; font-weight: 900; color: #fff;}
 .hero p { font-size: 18px; font-weight: 400; color: #fefefe; }
+
+ .overlay {
+    padding:  14% 10% 10% 10%; 
+    vertical-align: middle;
+	}
+	p#text {
+    text-align: center;
+    color: #fcf8e3;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.6;
+   
+}
+
 	
 }
 .quotation_div {
@@ -1144,15 +1157,15 @@ p#text {
 
 @media only screen and (max-width: 991px) and (min-width: 767px ){
 	 .overlay {
-    padding:  22% 10% 10% 10%; 
+    padding:  24% 10% 10% 10%; 
     vertical-align: middle;
 	}
 	p#text {
     text-align: center;
     color: #fcf8e3;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: lighter;
-    line-height: 2;
+    line-height: 1.8;
    
 }
 
@@ -1162,7 +1175,7 @@ p#text {
 
 @media only screen and (max-width: 1200px) and (min-width: 992px ){
 	 .overlay {
-    padding:  20% 10% 10% 10%; 
+    padding:  22% 10% 10% 10%; 
     vertical-align: middle;
 	}
 	p#text {
@@ -1170,7 +1183,7 @@ p#text {
     color: #fcf8e3;
     font-size: 19px;
     font-weight: lighter;
-    line-height: 2;
+     line-height: 1.4;
    
 }
 }
@@ -1187,3 +1200,12 @@ a i.glyphicon{
 	color: #ff6666;
 }
 .embed-responsive{position:relative;display:block;height:0;padding:0;overflow:hidden}.embed-responsive .embed-responsive-item,.embed-responsive embed,.embed-responsive iframe,.embed-responsive object,.embed-responsive video{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.embed-responsive-16by9{padding-bottom:56.25%}.embed-responsive-4by3{padding-bottom:75%}
+
+	p#text {
+    background-color: rgba(255,0,0,0.35);
+    margin: 0px auto;
+	padding: 0px 0px 0px 0px;
+	width: 82%;
+	font-weight: 600;
+	
+}
