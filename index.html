@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +17,7 @@
     <title>Welcome To Perfect Life Spot (PLS)</title>
 	
     <!-- css -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -34,12 +40,48 @@
         
         height: 300px;
       }
+   
+.video_contain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.video_contain video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
 </style>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
 <div style="overflow-x: hidden;">	
 	<section class="hero" id="intro">
-            <div class="container">
+		<div class="video_contain">
+			<video playsinline autoplay muted loop id="bgvid">    
+		   		 <source src="final.mp4" type="video/mp4">
+			</video>
+		</div>
+			
+            <!--div class="container">
               <div class="row">
                 <div class="col-md-12 text-right navicon">
                   <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
@@ -49,7 +91,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center inner">
 					<div class="animatedParent">
 						<h1 class="animated fadeInDown">PERFECT LIFE SPOT</h1><br>
-						<p class="animated fadeInUp">Redesigning YOUR life for a Happier You!</p>						
+						<p class="animated fadeInUp" style=" font-family: 'Petit Formal Script';" >Redesigning YOUR life for a Happier You!</p>						
 					</div>
 					<br>
 					<audio controls>						  
@@ -61,10 +103,11 @@
               </div>
               <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="#about" class="learn-more-btn btn-scroll">Experience Awesomeness</a>
+                  <a href="#about" class="learn-more-btn btn-scroll">Experience Awesomeness !</a>
                 </div>
               </div>
-            </div>
+              <p style="position: absolute; top: 18px; right: 15px;">Photo Credit: Rohit Gautam</p>
+            </div-->
     </section>
 	
 	
@@ -94,11 +137,11 @@
                                                                   <li class="active"><a href="#intro">Home</a></li>
                                                                   <li><a href="#about">Why do we exist?</a></li>
                                                                   <li ><a href="founder-story.html">Founder&apos;s story</a></li>
-																   <li ><a href="#service">Our Tools</a></li>
-																   <li style="background-color:antiquewhite;"><a href="">Get Book</a></li>
-                                                                  <li ><a href="#works">Workshops &#47; Courses</a></li>				                                                                  
+																   <li ><a href="#service">Our Tool-kit</a></li>
+																   <li style="background-color:antiquewhite;"><a href="">our Books</a></li>
+                                                                  <li ><a href="#works">Come for a Session!</a></li>				                                                                 
                                                                   
-                                                                  <li><a href="#contact">Contact</a></li>
+                                                                  <li><a href="#contact">Connect</a></li>
                                                             </ul>
                                                       </div>
                                                       <!-- /.Navbar-collapse -->
@@ -136,7 +179,7 @@
             <div class="col-lg-8 col-lg-offset-2 animatedParent">		
 				<div class="text-center" style="text-align: justify;">
 					
-						<p> 1.&nbsp;&nbsp;Our formal academic system misses on important employability, happiness &amp; <a href="#">life-skills </a>. It is mostly information-oriented (theoretical) rather than skills-oriented (practical). It does not prepare us for life &amp; its challenges.<br>
+						<p> 1.&nbsp;&nbsp;Our formal academic system misses on important employability, happiness &amp; life-skills. It is mostly information-oriented (theoretical) rather than skills-oriented (practical). It does not prepare us for life &amp; its challenges.<br>
 						2.&nbsp;&nbsp;The traditional classroom design is hierarchical, stressful &amp; monotonous. <br>
 						3.&nbsp;&nbsp;We are passionate about education and happiness.</p>
 					
@@ -147,7 +190,7 @@
 					
 					<p><i>For us, education is an awesome way to transform the world into a happier place.</i></p><br>
 					<div class="text-center">
-					<a href="about.html" target="_blank" class="btn btn-skin btn-scroll" >Know Us More</a>
+					<a href="watch-story.html" target="_blank" class="btn btn-skin btn-scroll" >Watch Our Story</a>
 					</div>
 				</div>
             </div>
@@ -168,7 +211,7 @@
 					<div>
 					<div class="section-heading text-center">
 					<h2 class="h-bold">HOW do we do this?</h2>
-					<p style="text-align: center;">Through these tools</p>
+					<p style="text-align: center;"> Our Tool-Kit:</p>
 					<div class="divider-header"></div>
 					</div>
 					</div>
@@ -193,7 +236,7 @@
 						<p>
 						Is the energy of being completely aware and awake to the present moment.
 						</p>
-						<a href="mindfulness.html" class="btn btn-skin" style=" font-family: 'Petit Formal Script'; text-transform: capitalize; font-weight: 700;">Experience this</a>
+						<a href="mindfulness.html" class="btn btn-skin" style=" font-family: 'Petit Formal Script'; text-transform: inherit; font-weight: 700;">Experience  this</a>
 					</div>
                 </div>
 				</div>
@@ -210,7 +253,7 @@
 						<p>
 						Is being able to speak and listen to the language of needs and feelings without any judgment.
 						</p>
-						<a href="#" class="btn btn-skin" style=" font-family: 'Petit Formal Script'; text-transform: capitalize; font-weight: 700;">Experience this</a>
+						<a href="non-violent-communication.html" class="btn btn-skin" style=" font-family: 'Petit Formal Script'; text-transform: inherit; font-weight: 700;">Experience this</a>
 					</div>
                 </div>
 				</div>
@@ -227,7 +270,7 @@
 						<p>
 						Is the ability to recognize, understand, identify, express and regulate emotions.
 						</p>
-						<a href="emotional-intelligence.html" class="btn btn-skin" style=" font-family: 'Petit Formal Script'; text-transform: capitalize; font-weight: 700;">Experience this</a>
+						<a href="emotional-intelligence.html" class="btn btn-skin" style=" font-family: 'Petit Formal Script'; text-transform: inherit; font-weight: 700;">Experience this</a>
 					</div>
                 </div>
 				</div>
@@ -248,7 +291,8 @@
 					<div>
 					<div class="animatedParent">
 					<div class="section-heading text-center">
-					<h2 class="h-bold animated bounceInDown">Workshops &#47; Courses</h2>
+						<h2 class="h-bold animated bounceInDown">What do we do:</h2>
+					<p style="text-align: center;"> Come for a Session</p>
 					<div class="divider-header"></div>
 					</div>
 					</div>
@@ -270,11 +314,21 @@
 						      <div class="col-xs-6 col-md-3 " >
 
 						       <br><br>
-								<div class="quotation_div" onclick="location.href='mindfulness.html';"  style="cursor:pointer;">
+								<!--div class="quotation_div" onclick="location.href='mindfulness.html';"  style="cursor:pointer;">
 									<div class="overlay">
 										<a href="mindfulness.html" ><p id="text">Mindfulness<br> Workshops!</p></a>
 									</div>
-								</div>	
+								</div-->	
+
+								<div class="card" >										 
+										  <img src="img/mindfulness.jpg" class="card-img-top"/>
+										  <div class="card-block">
+										    <a href="mindfulness.html"><h6 class="card-title">Mindfulness</h6></a>
+										    
+										    
+										  </div>
+										</div>
+								
 									
 									
 
@@ -286,9 +340,30 @@
 						      	<br><br>
 								<div class="quotation_div" onclick="location.href='emotional-intelligence.html';"  style="cursor:pointer;">
 									<div class="overlay">
-										<a href="emotional-intelligence.html"><p id="text">Emotional<br> Intelligence !</p></a>
+										<a href="emotional-intelligence.html"><p id="text">Emotional<br> Intelligence!</p></a>
 									</div>
 								</div>	
+								
+
+						      </div>
+						    </div>
+
+						    <div class="item">
+						      <div class="col-xs-6 col-md-3  ">
+
+						      <br><br>
+								<!--div class="quotation_div" onclick="location.href='mindspa.html';"  style="cursor:pointer;">
+									<div class="overlay">
+										<a href="mindspa.html"><p id="text">Weekly <br>Mindspa!</p></a>
+									</div>
+								</div-->	
+								<div class="card" >										 
+										  <img src="img/mindspa.jpg" class="card-img-top"/>
+										  <div class="card-block" style="border-top:  1px solid #e9e9e9;">
+										    <a href="mindspa.html"><h6 class="card-title">MindSpa Wordkshops</h6></a>
+										    
+										  </div>
+										</div>
 								
 
 						      </div>
@@ -297,12 +372,19 @@
 						      <div class="col-xs-6 col-md-3  ">
 
 						      <br><br>
-								<div class="quotation_div" onclick="location.href='empathy-groups.html';"  style="cursor:pointer;">
+								<!--div class="quotation_div" onclick="location.href='empathy-groups.html';"  style="cursor:pointer;">
 									<div class="overlay">
 										<a href="empathy-groups.html"><p id="text">Empathy <br>Groups!</p></a>
 									</div>
-								</div>	
-								
+								</div-->	
+								<div class="card" >										 
+										  <img src="img/empathy.jpg" class="card-img-top"/>
+										  <div class="card-block">
+										    <a href="empathy.html"><h6 class="card-title">Empathy Workshops</h6></a>
+										    
+										    
+										  </div>
+										</div>
 
 						      </div>
 						    </div>
@@ -310,24 +392,19 @@
 						      <div class="col-xs-6 col-md-3  ">
 
 						      <br><br>
-								<div class="quotation_div" onclick="location.href='family-empathy-groups.html';"  style="cursor:pointer;">
+								<!--div class="quotation_div" onclick="location.href='family-empathy-groups.html';"  style="cursor:pointer;">
 									<div class="overlay">
 										<a href="family-empathy-groups.html"><p id="text">Family Empathy<br> Groups!</p></a>
 									</div>
-								</div>	
-								
-
-						      </div>
-						    </div>
-						    <div class="item">
-						      <div class="col-xs-6 col-md-3  ">
-
-						      <br><br>
-								<div class="quotation_div" onclick="location.href='mindspa.html';"  style="cursor:pointer;">
-									<div class="overlay">
-										<a href="mindspa.html"><p id="text">Weekly <br>Mindspa's!</p></a>
-									</div>
-								</div>	
+								</div-->	
+								<div class="card" >										 
+										  <img src="img/family-empathy.jpg" class="card-img-top"/>
+										  <div class="card-block">
+										    <a href="family-empathy-groups.html"><h6 class="card-title">Family Empathy Groups</h6></a>
+										    
+										    
+										  </div>
+										</div>
 								
 
 						      </div>
@@ -362,12 +439,19 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="animatedParent">
 					<div class="section-heading text-center">
-					<h2 class="h-bold animated bounceInDown">Get in touch with us</h2>
+					<h2 class="h-bold animated bounceInDown">Get in touch</h2>
 					<div class="divider-header"></div>
 					</div>
 					</div>
 				</div>
+							         
 			</div>
+			<div class="f-icons" style="text-align: center;">
+
+                                <a href="" target="_blank" id="first"><i class="fa fa-facebook" style=""></i></a>
+                                <a href="#" target="_blank" id="first"><i class="fa fa-twitter"  style=""></i></a>                          
+                                <a href="#" target="_blank" style="font-size: 22px;"><i class="fa fa-youtube" style=""></i></a>
+            </div>
 
 		</div>
 		
@@ -376,10 +460,10 @@
 			<div class="row marginbot-80">
 				<div class="col-md-6">
 
-					<h6 style="text-align: left;">Want to experience?</h6>
+					<h6 style="text-align: left;">Address:</h6>
 					
 					
-					<p style="text-align: justify;font-size: 102%;line-height: 25px;">The space is essentially experiential, simply come for a session/workshop.<br>Address: 2250, Hudson Lane, Near GTB Nagar Metro Station (Exit 3),<br> New Delhi - 110009 <br>Call: 9717129028  <br>  Email: <a href="mailto: perfectlifespot@gmail.com" >perfectlifespot@gmail.com</a><br>Timings: 11 am &dash; 5:30 pm
+					<p style="text-align: justify;font-size: 102%;line-height: 25px;">The space is essentially experiential, simply come for a session/workshop.<br>Address: 2250 Hudson Lane, Near GTB Nagar Metro Station (Exit 3),<br> New Delhi - 110009 <br>Call: 9717129028  <br>  Email: <a href="mailto: perfectlifespot@gmail.com" >perfectlifespot@gmail.com</a><br>Timings: 11 am &dash; 5:30 pm
 					</p>
 										
 					<br>
@@ -410,12 +494,9 @@
     						</div>
     						<div class="row">
     							<div class="col-md-12">
+    								
     								<div class="form-group">
-    									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
-    								</div>
-    								<div class="form-group">
-    									<input type="tel" class="form-control" name="phone" id="phone" placeholder="Contact No" data-rule="minlen:10" data-msg="Please enter at least 10 numbers of subject" />
+    									<input type="tel" class="form-control" name="phone" id="phone" placeholder="Mobile No" data-rule="minlen:10" data-msg="Please enter at least 10 numbers of subject" />
                                         <div class="validation"></div>
     								</div>
     								<div class="form-group">
@@ -423,8 +504,8 @@
 									  <select class="form-control" id="sel1">
 									    <option>Mindfulness Workshop</option>
 									    <option>Emotional Intelligence Workshop</option>
-									    <option>Empath Groups Workshop</option>
-									    <option>Family Empath Groups Workshops</option>
+									    <option>Empathy Group</option>
+									    <option>Family Empathy Group</option>
 									    <option>Weekly Mindspa/Freedom From Stress</option>
 									    <option>Other</option>
 									  </select>
@@ -439,7 +520,8 @@
     							</div>
     						</div>
 						</form>
-						<p style="text-align: justify;font-size: 101%;line-height: 25px;"><b style="font-size: 106%; line-height: 28px;"">Upcoming Events</b><br>We offer workshops to enhance life-skills such as crisis-management, communication and confidence, entrepreneurship, emotional intelligence, survival cooking, self-love, mindfulness, anger-management, memory-enhancement &amp; so on. Likewise business professionals are offered workshops that cater to skills such as Business Language, Ethics, Conflict-Management, Stress-Management, Inter-personal Skills, Self-awareness, Motivation and Target Achievement <a href="http://personalitydevelopmentcourses.net" target="_blank">http://personalitydevelopmentcourses.net</a><br>Guidance for English Honours students at Delhi University. For details: <a href="http://englishhonours.com/" target="_blank">http://englishhonours.com</a></p>
+						<p style="text-align: justify;font-size: 101%;line-height: 25px;"><b style="font-size: 106%; line-height: 28px;"">We also offer guidance for English Honours students at Delhi University. For details: <a href="http://englishhonours.com/" target="_blank">http://englishhonours.com</a> <br>
+							<a href="http://personalitydevelopmentcourses.net" target="_blank">http://personalitydevelopmentcourses.net</a><br></p>
 				</div>
 			</div>	
 
